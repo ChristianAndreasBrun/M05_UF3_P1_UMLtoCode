@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UML_to_Code
+namespace DigitalStore
 {
     internal class Program
     {
