@@ -10,19 +10,21 @@ namespace UML_to_Code
         public string Name;
         protected string Phone;
         public string Email;
+
+        public List<Address> address;
     }
 
-    public struct Address
+    public class Customer : Person
     {
-        public string Street;
-        public string City;
-        public string State;
-        public int PostalCode;
-        public string Country;
+        public DateTime Registration;
+        private int CreditScore;
+        public List<Account> account;
+    }
 
-        public bool Validate()
-        {
-            return true;
-        }
+    public class Employee : Person
+    {
+        public enum TYPE { Finanzas, Contabilidad, PYMES, Tesoreria };
+        public TYPE Departament;
+        private float Salary;
     }
 }
