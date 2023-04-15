@@ -20,12 +20,18 @@ namespace UML_to_Code
     public class Investing : Account
     {
         public float Interest;
-        public float ApplyInterest;
+        public float ApplyInterest()
+        {
+            return Interest;
+        }
     }
 
     public class Saving : Account
     {
         private float ProtectedAmount;
-        public float LiberateSaving;
+        public float LiberateSaving() 
+        { 
+            return ProtectedAmount; 
+        }
     }
 }

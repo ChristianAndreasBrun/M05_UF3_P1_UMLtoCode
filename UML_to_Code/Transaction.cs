@@ -4,7 +4,7 @@ using System.Text;
 
 namespace UML_to_Code
 {
-    public class Transaction
+    public struct Transaction
     {
         public string From;
         public string To;
